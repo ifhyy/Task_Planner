@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% endblock %}
+    <link type="text/css" rel="stylesheet" href="{% static 'notes/css/main.css' %}">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+{% block navbar %}
+    <div class="navbar">
+        <div class="logo">My Website</div>
+        <ul class="nav-items">
+            {% if request.user.is_authenticated %}
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Add Task</a></li>
+                <li><a href="{% url 'notes:logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'notes:login' %}">Log In</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}
+{% block content %}
+{% endblock %}
+</body>
+</html>

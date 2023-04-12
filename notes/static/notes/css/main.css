@@ -1,0 +1,103 @@
+/* Reset default styles for ul and li */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #000; /* Change the background color to your desired color */
+    height: 50px; /* Change the height of the navigation bar as needed */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Style for the site logo */
+.navbar .logo {
+    float: left;
+    color: #fff; /* Change the color of the logo text to your desired color */
+    font-size: 20px; /* Change the font size of the logo text as needed */
+    font-weight: bold; /* Add font weight as needed */
+    margin-right: 20px; /* Add margin for spacing */
+    line-height: 50px; /* Vertically center the logo text */
+}
+
+/* Style for the navigation items */
+.navbar .nav-items {
+    float: right;
+}
+
+/* Style for the navigation links */
+.navbar .nav-items a {
+    color: #fff; /* Change the color of the navigation links to your desired color */
+    font-size: 16px; /* Change the font size of the navigation links as needed */
+    margin-right: 10px; /* Add margin for spacing between links */
+    line-height: 50px; /* Vertically center the navigation links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.login-form {
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+	margin-bottom: 20px;
+}
+
+.login-label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.login-field {
+	padding: 10px;
+	width: 90%;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+    background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3e8e41;
+}
+
+.form-error {
+	color: #f44336;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.register {
+	text-align: right;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.register a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+.register a:hover {
+	text-decoration: underline;
+}

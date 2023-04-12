@@ -1,0 +1,11 @@
+# To activate this run
+# pip install -r requirements.txt
+#
+# or go to Python Packages
+# to install all the required packages by hand
+#
+#
+psycopg2
+django-autoslug~=1.9.8
+python-decouple
+Django~=4.2
